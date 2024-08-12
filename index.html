@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalClinic</title>
+    <link rel="shortcut icon" href="./images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-tooth"></i>DentalClinic</a>
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+
+        <nav class="header-nav">
+            <ul class="navbar">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#doctors">doctors</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+        </nav>
+        <!-- /.header-nav -->
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="content">
+                        <h3 class="content-title wow animate__animated animate__bounceInLeft animate__delay-0.5s animate__slow" data-wow-offset="300">Dental Clinic</h3>
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis consequatur odio delectus. Recusandae quos consectetur harum, non facere eius.</p>
+
+                        <a href="#about" class="btn">About Us</a>
+                        <a href="#contacts" class="btn">Contact Us</a>
+                    </div>
+                    <!-- /.content -->
+                     <div class="img">
+                        <img src="./images/main/happy_clients.png" alt="Happy_Clients">
+                     </div>
+                     <!-- /.img -->
+                </div>
+            </div>
+        </section>
+        <!-- /#home.home -->
+         <section class="number wow animate__animated animate__bounceInLeft animate__delay-0.5s animate__slow" data-wow-offset="300">
+            <div class="container">
+                <div class="row">
+                    <div class="box-container">
+                        <!-- 1 -->
+                        <div class="box">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <div class="content">
+                                <h4 class="content-title">15+</h4>
+                                <p class="content-description">Doctors</p>
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                         <!-- 2 -->
+                         <div class="box">
+                            <i class="fa-solid fa-tooth"></i>
+                            <div class="content">
+                                <h4 class="content-title">10+</h4>
+                                <p class="content-description">Services</p>
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                         <!-- 3 -->
+                         <div class="box">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <div class="content">
+                                <h4 class="content-title">100%</h4>
+                                <p class="content-description">Success operations</p>
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                         <!-- 4 -->
+                         <div class="box">
+                            <i class="fa-regular fa-face-smile"></i>
+                            <div class="content">
+                                <h4 class="content-title">2000+</h4>
+                                <p class="content-description">Happy Clients</p>
+                            </div>
+                        </div>
+                        <!-- /.box -->
+                    </div>
+                    <!-- /.box-container -->
+                </div>
+            </div>
+         </section>
+         <!-- /.number -->
+          <section class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="img">
+                        <img src="./images/main/about_section.jpg" alt="About Us">
+                    </div>
+                    <!-- /.img -->
+                     <div class="content">
+                        <h3 class="content-text wow animate__animated animate__flip animate__delay-0.5s animate__slow" data-wow-offset="300">Why choose us?</h3>
+
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae architecto accusamus perferendis sunt, fugiat soluta. Et dicta temporibus quidem ut voluptas, quas aliquam, cupiditate, ipsa incidunt ullam accusamus itaque quia deserunt exercitationem quisquam magnam officia. Voluptatibus pariatur odio rem?</p>
+
+                        <p class="content-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam facere eligendi ipsum optio laudantium, dolore non pariatur incidunt minus quia sit officia corporis accusamus quaerat atque deleniti explicabo. Dolores pariatur praesentium hic, ducimus nulla quam ut, repudiandae, fuga enim quisquam aperiam iusto aspernatur commodi ratione.</p>
+
+                        <a href="#contacts" class="btn">Contact Us</a>
+                     </div>
+                     <!-- /.content -->
+                </div>
+            </div>
+          </section>
+          <!-- /#about.about -->
+          <section class="services" id="services">
+            <h2 class="heading"> Our <span>services</span></h2>
+
+            <div class="services-slider swiper">
+                <div class="wrapper swiper-wrapper">
+                    <!-- slide 1 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/main/dental-care.png" alt="Dental care">
+                        <h4 class="slide-text">Dental care</h4>
+                        <p class="slide-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ex esse, dolores distinctio quaerat voluptatum.</p>
+                    </div>
+                    <!-- /.slide -->
+                     <!-- slide 2 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/main/oral_surgery.png" alt="Dental care">
+                        <h4 class="slide-text">Oral surgery</h4>
+                        <p class="slide-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ex esse, dolores distinctio quaerat voluptatum.</p>
+                    </div>
+                    <!-- /.slide -->
+                     <!-- slide 3 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/main/dental-implant.png" alt="Dental care">
+                        <h4 class="slide-text">Implants</h4>
+                        <p class="slide-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ex esse, dolores distinctio quaerat voluptatum.</p>
+                    </div>
+                    <!-- /.slide -->
+                     <!-- slide 4 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/main/dental-crown.png" alt="Dental care">
+                        <h4 class="slide-text">Crowns</h4>
+                        <p class="slide-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ex esse, dolores distinctio quaerat voluptatum.</p>
+                    </div>
+                    <!-- /.slide -->
+                     <!-- slide 5 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/main/emergency_care.png" alt="Dental care">
+                        <h4 class="slide-text">Emergency care</h4>
+                        <p class="slide-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ex esse, dolores distinctio quaerat voluptatum.</p>
+                    </div>
+                    <!-- /.slide -->
+                     <!-- slide 6 -->
+                    <div class="slide swiper-slide">
+                        <img src="./images/main/dental-protection.png" alt="Dental care">
+                        <h4 class="slide-text">Caries protect</h4>
+                        <p class="slide-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ex esse, dolores distinctio quaerat voluptatum.</p>
+                    </div>
+                    <!-- /.slide -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- /.services-slider -->
+          </section>
+          <!-- /#services.services -->
+        <section class="doctors" id="doctors">
+            <div class="container">
+                <div class="row">
+                    <h2 class="heading">Our<span> doctors</span></h2>
+
+                    <div class="doctors-slider swiper">
+                        <div class="wrapper swiper-wrapper">
+                            <!-- 1 -->
+                            <div class="slide swiper-slide">
+                                <img src="./images/main/doc_1.jpg" alt="Doctors" class="slide-img">
+                                <h3 class="slide-title">Name Surname</h3>
+                                <p class="slide-title__description">Sergion</p>
+                            </div>
+                            <!-- /.slide -->
+                            <!-- 2 -->
+                            <div class="slide swiper-slide">
+                                <img src="./images/main/doc_2.jpg" alt="Doctors" class="slide-img">
+                                <h3 class="slide-title">Name Surname</h3>
+                                <p class="slide-title__description">Assistant</p>
+                            </div>
+                            <!-- /.slide -->
+                            <!-- 3 -->
+                            <div class="slide swiper-slide">
+                                <img src="./images/main/doc_3.jpg" alt="Doctors" class="slide-img">
+                                <h3 class="slide-title">Name Surname</h3>
+                                <p class="slide-title__description">Sergion</p>
+                            </div>
+                            <!-- /.slide -->
+                            <!-- 4 -->
+                            <div class="slide swiper-slide">
+                                <img src="./images/main/doc_4.jpg" alt="Doctors" class="slide-img">
+                                <h3 class="slide-title">Name Surname</h3>
+                                <p class="slide-title__description">Assistant</p>
+                            </div>
+                            <!-- /.slide -->
+                            <!-- 5 -->
+                            <div class="slide swiper-slide">
+                                <img src="./images/main/doc_5.jpg" alt="Doctors" class="slide-img">
+                                <h3 class="slide-title">Name Surname</h3>
+                                <p class="slide-title__description">Sergion</p>
+                            </div>
+                            <!-- /.slide -->
+                            <!-- 6 -->
+                            <div class="slide swiper-slide">
+                                <img src="./images/main/doc_6.jpg" alt="Doctors" class="slide-img">
+                                <h3 class="slide-title">Name Surname</h3>
+                                <p class="slide-title__description">Assistant</p>
+                            </div>
+                            <!-- /.slide -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- /.doctors-slider -->
+                </div>
+            </div>
+        </section>
+        <!-- /#doctors.doctors -->
+         <section class="review" id="review">
+            <div class="container">
+                <div class="row">
+                    <h2 class="heading">Our <span>Review</span></h2>
+
+                    <div class="review-slider swiper">
+                        <div class="wrapper swiper-wrapper">
+                            <!-- Slide1 -->
+                            <div class="slide swiper-slide">
+                                <p class="slide-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit eius laudantium alias sit odio magnam ut voluptate, tempora aliquam distinctio praesentium culpa corrupti natus.
+                                </p>
+
+                                <div class="user">
+                                    <img src="./images/main/user_1.jpg" alt="Review">
+                                    <div class="user-info">
+                                        <h4 class="user-info__name">Name Surname</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.user -->
+                            </div>
+                            <!-- Slide2 -->
+                            <div class="slide swiper-slide">
+                                <p class="slide-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit eius laudantium alias sit odio magnam ut voluptate, tempora aliquam distinctio praesentium culpa corrupti natus.
+                                </p>
+
+                                <div class="user">
+                                    <img src="./images/main/user_2.jpg" alt="Review">
+                                    <div class="user-info">
+                                        <h4 class="user-info__name">Name Surname</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.user -->
+                            </div>
+                            <!-- Slide3 -->
+                            <div class="slide swiper-slide">
+                                <p class="slide-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit eius laudantium alias sit odio magnam ut voluptate, tempora aliquam distinctio praesentium culpa corrupti natus.
+                                </p>
+
+                                <div class="user">
+                                    <img src="./images/main/user_3.jpg" alt="Review">
+                                    <div class="user-info">
+                                        <h4 class="user-info__name">Name Surname</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.user -->
+                            </div>
+                            <!-- Slide4 -->
+                            <div class="slide swiper-slide">
+                                <p class="slide-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit eius laudantium alias sit odio magnam ut voluptate, tempora aliquam distinctio praesentium culpa corrupti natus.
+                                </p>
+
+                                <div class="user">
+                                    <img src="./images/main/user_4.jpg" alt="Review">
+                                    <div class="user-info">
+                                        <h4 class="user-info__name">Name Surname</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.user -->
+                            </div>
+                            <!-- Slide5 -->
+                            <div class="slide swiper-slide">
+                                <p class="slide-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit eius laudantium alias sit odio magnam ut voluptate, tempora aliquam distinctio praesentium culpa corrupti natus.
+                                </p>
+
+                                <div class="user">
+                                    <img src="./images/main/user_5.jpg" alt="Review">
+                                    <div class="user-info">
+                                        <h4 class="user-info__name">Name Surname</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.user -->
+                            </div>
+                            <!-- Slide6 -->
+                            <div class="slide swiper-slide">
+                                <p class="slide-description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit eius laudantium alias sit odio magnam ut voluptate, tempora aliquam distinctio praesentium culpa corrupti natus.
+                                </p>
+
+                                <div class="user">
+                                    <img src="./images/main/user_6.jpg" alt="Review">
+                                    <div class="user-info">
+                                        <h4 class="user-info__name">Name Surname</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.user -->
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- /.wrapper -->
+                    </div>
+                    <!-- /.review-slider -->
+                </div>
+            </div>
+         </section>
+         <!-- /#review.review -->
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="heading"><span>Contact</span> us</h2>
+                <div class="row">
+                    <div class="img">
+                        <img src="./images/main/form_img.png" alt="Contacts">
+                    </div>
+                    <!-- /.img -->
+                     <form action="https://api.web3forms.com/submit" method="POST" class="form">
+                        <input type="hidden" name="access_key" value="eef9fd6a-6e06-4a29-bbd1-bf52601fc6f8">
+
+                        <span class="form-name">Your name</span>
+                        <input type="text" class="box" name="name" required placeholder="enter your name..." maxlength="50" autocomplete="off">
+
+                        <span class="form-email">Your email</span>
+                        <input type="email" class="box" name="email" required placeholder="enter your email..." maxlength="50" autocomplete="off">
+
+                        <span class="form-number">Your number</span>
+                        <input type="number" name="number" class="box" reguired placeholder="enter your number..." max="9999999999" min="0">
+
+                        <span class="form-message">Your message</span>
+                        <textarea class="box" name="message" cols="30" rows="10" required placeholder="enter your message..."></textarea>
+
+                        <input type="submit" value="send message" class="btn" name="send">
+                     </form>
+                     <!-- /.form -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
+        <section class="footer-icon">
+            <div class="container">
+                <div class="row">
+                    <div class="share">
+                        <a href="https://uk-ua.facebook.com/" class="fab fa-facebook"></a>
+                        <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                        <a href="https://web.telegram.org/k/" class="fab fa-telegram"></a>
+                        <a href="https://www.youtube.com/?app=desktop&hl=ru" class="fab fa-youtube"></a>
+                        <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"></a>
+                    </div>
+                    <!-- /.share -->
+
+                    <hr>
+
+                    <div class="copyright">&copy; copyright 2024 by <span>Coding With Semerenko</span> || all rights reserved</div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- /.footer -->
+
+    <!-- для полного подключения JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <!-- нужно после основного файла js ТОГДА ПЛАГИНЫ jquery РАБОТАЮТ -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    
+</body>
+</html>
