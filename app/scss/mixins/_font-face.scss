@@ -1,0 +1,34 @@
+// $fonts: (//переменная
+//     'norwesterregular': (//навание шрифта
+//         'woff2': '../fonts/norwester-webfont.woff2',//ключом является расширение (значением является путь)
+//         'woff': '../fonts/norwester-webfont.woff'
+//     )
+//     // Если шрифтов будет больше, через запятую генерируем другие шрифты также
+// );
+// Writting myself MIXIN
+// МИКСИН БУДЕТ ГЕНИРИРОВАТЬ ШРИФТЫ
+@mixin  generate-font-face($font-families, $font-weight: 'normal', $font-style: 'normal') {//будет принимать два основных значения (по умолчанию)
+    // внутри этого миксина будем перебирать
+    @each $ff, $urls in $font-families {//где $ff это ключ 'norwesterregular', а значением $urls будет весь этот список
+    // (//навание шрифта
+    //     'woff2': '../fonts/norwester-webfont.woff2',//ключом является расширение (значением является путь)
+    //     'woff': '../fonts/norwester-webfont.woff'
+    // )
+        @font-face {
+            font-display: swap;
+            font-family: $ff;
+            font-style: $font-style;
+            font-weight: $font-weight;
+            // генерируем src
+            @each $format, $url in $urls {//проходимся по списку 'woff2': '../fonts/norwester-webfont.woff2',// 'woff': '../fonts/norwester-webfont.woff'
+                src: url($url) format($format);
+            }
+        }
+
+    }
+    
+};
+// вызываем МИКСИН
+// @include generate-font-face($fonts);//переменная $fonts, будет идти как $font-families
+
+// В СТИЛЯХ ДОЛЖЕН БЫТЬ СГЕНИРРОВАН @font-face

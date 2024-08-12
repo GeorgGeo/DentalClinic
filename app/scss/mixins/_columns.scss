@@ -1,0 +1,53 @@
+// миксин для генерации колонок
+@mixin make-grid-columns(
+  $columns: $grid-columns,
+  $gutter: $grid-gutter-width,
+  $breakpoints: $grid-breakpoints
+) {
+  // 1. создать базовый класс колонки
+  .col {
+    padding-left: calc(#{$gutter} / 2);
+    padding-right: calc(#{$gutter} / 2);
+    position: relative;
+    width: 100%;
+  }
+
+  // 2. каждый класс должен содержать определённую ширину.
+  // Сгенерировать 12 классов с  соответствующей шириной
+  @for $i from 1 through $columns {
+    //иттерируем от 1 до 12
+    // на каждой иттерации будем создавать один селектор
+    .col-#{$i} {
+      //#-интерполяция, динамически вычисляется
+      // max-width: percentage($i / $columns);
+      max-width: percentage(calc($i / $columns));
+    }
+  }
+
+  //   3. Создать колонки под каждый медиа-запрос
+  // .col-sm-1..., col-md-1 ..., ...
+  // перебираем медиа запросы
+  // пример
+  // @media (max-width: 1199px) {
+  //     .col-xl-1 {
+  //         max-width: 8.33%;
+  //     }
+  // 12 - их должно быть 12
+  // }
+  // @media (max-width: 991px) {
+  //     .col-lg-1 {
+  //         max-width: 8.33%;
+  //     }
+  // 12 - их должно быть 12
+  // }
+  @each $name, $value in $breakpoints {//в $name будет xl,lg,md,sm
+    @include media-breakpoint($value) {
+      //сформировали четыре медиа-запроса
+      @for $i from 1 through $columns {
+        .col-#{$name}-#{$i} {
+          max-width: percentage(calc($i / $columns));
+        }
+      }
+    }
+  }
+}

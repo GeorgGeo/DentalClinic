@@ -1,0 +1,8 @@
+// Вызов генерации flex-ов для desktop
+@include generate-flex-helpers();
+
+@each $name, $value in $grid-breakpoints {//в $name будет xl,lg,md,sm
+    @include media-breakpoint($value) {
+        @include generate-flex-helpers('-#{$name}');
+    }
+  }

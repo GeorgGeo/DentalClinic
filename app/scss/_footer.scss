@@ -1,0 +1,36 @@
+.footer .row {
+  justify-content: center;
+  flex-direction: column;
+}
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+  .share a {
+    margin: 0 0.3rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: var(--medium-fz);
+    color: var(--green-clr);
+    background-color: var(--white-clr);
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      color: #056627;
+      transform: translateY(-2rem);
+      box-shadow: var(--box-shadow);
+    }
+  }
+  hr {
+    width: 100%;
+    border: 0.12rem solid rgba(0, 0, 0, 0.5);
+    margin: 2rem 0;
+  }
+  .copyright {
+    color: #ddd;
+    font-size: var(--medium-fz);
+    span {
+      color: var(--green-clr);
+    }
+  }
+}

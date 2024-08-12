@@ -1,0 +1,237 @@
+// #region section Home
+.home {
+  margin-top: 7rem;
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    .content {
+      flex: 1 1 40rem;
+      text-align: center;
+      h3 {
+        margin-bottom: 1rem;
+        color: var(--green-clr);
+        font-size: var(--biggest-fz);
+      }
+      p {
+        margin-bottom: 1.5rem;
+        color: var(--white-clr);
+        font-size: var(--medium-fz);
+        text-align: justify;
+      }
+    }
+    .img {
+      flex: 1 1 40rem;
+      text-align: center;
+    }
+  }
+}
+// #endregion
+// #region section Number
+.number {
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .box {
+      flex: 1 1 25rem;
+      background: var(--green-clr);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      gap: 2rem;
+      box-shadow: var(--box-shadow);
+      i {
+        font-size: var(--number-icons);
+        color: var(--white-clr);
+      }
+      .content {
+        font-size: var(--medium-fz);
+        color: var(--white-clr);
+      }
+    }
+  }
+}
+// #endregion
+//#region section About
+.about {
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    .img {
+      flex: 1 1 40rem;
+      img {
+        border-radius: 50%;
+        border: 0.5rem solid var(--green-clr);
+        object-fit: cover;
+      }
+    }
+    .content {
+      flex: 1 1 40rem;
+      color: var(--white-clr);
+      h3 {
+        font-size: var(--biggest-fz);
+        color: var(--green-clr);
+      }
+      p {
+        font-size: var(--medium-fz);
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+//#endregion About
+//#region section Services
+.services {
+  .slide {
+    width: 30rem;
+    background-color: var(--white-clr);
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    img {
+      height: 25rem;
+    }
+    h4 {
+      margin: 1.5rem 0;
+      font-size: var(--large-fz);
+    }
+    p {
+      font-size: var(--small-fz);
+      text-align: justify;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--green-clr);
+  }
+}
+//#endregion Services
+//#region section Doctors
+.doctors .row {
+  justify-content: center;
+}
+.doctors {
+  .slide {
+    width: 30rem;
+    background-color: var(--white-clr);
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+
+    img {
+      height: 25rem;
+      width: 25rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 0.5rem solid var(--green-clr);
+    }
+
+    h3 {
+      margin: 1.5rem 0rem;
+      font-size: var(--large-fz);
+    }
+
+    p {
+      font-size: var(--small-fz);
+      text-align: center;
+      padding: 1rem;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--green-clr);
+  }
+}
+//#endregion Doctors
+//#region section Review
+.review .row {
+  justify-content: center;
+}
+.review {
+  .slide {
+    width: 35rem;
+    border-radius: 0.5rem;
+    background-color: var(--white-clr);
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+  p {
+    font-size: var(--small-fz);
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    h4 {
+      font-size: var(--small-fz);
+    }
+    img {
+      width: 7rem;
+      height: 7rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .user-info {
+      .stars i {
+        font-size: 1.5rem;
+        color: var(--green-clr);
+      }
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--green-clr);
+  }
+}
+//endregion Review
+//#region section contacts
+.contacts .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+.contacts .row .img {
+  flex: 1 1 40rem;
+}
+.contacts .row form {
+  flex: 1 1 40rem;
+  .box {
+    width: 100%;
+    margin: 1rem 0 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--white-clr);
+    font-size: var(--small-fz);
+    padding: 0.5rem 1rem;
+    text-transform: none;
+  }
+  .box:focus {
+    // color: var(--bs-body-color);
+    background-color: rgba(93, 236, 138, 0.95);
+    border-color: var(--green-clr);
+    // border-color: #86b7fe;
+    box-shadow: 0 0 0 .35rem rgba(25, 168, 70, 0.45);
+}
+  textarea.box {
+    height: 15rem;
+    resize: none;
+  }
+  span {
+    font-size: var(--small-fz);
+    color: var(--white-clr);
+  }
+}
+//#endregion contacts
+
+

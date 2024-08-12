@@ -1,0 +1,44 @@
+$fonts: (//переменная
+    'norwesterregular': (//навание шрифта
+        'woff2': '../fonts/norwester-webfont.woff2',//ключом является расширение (значением является путь)
+        'woff': '../fonts/norwester-webfont.woff'
+    )
+    // Если шрифтов будет больше, через запятую генерируем другие шрифты также
+);
+
+// Grid
+$container-width: 1200px;
+$grid-columns: 12;//сколько будет колонок
+$grid-gutter-width: 30px;//отступы и у колонок и у контейнера
+
+// определяем размеры контейнера и контрольных точек
+$grid-breakpoints: (
+    xl: 1199px,
+    lg: 991px,
+    md: 767px,
+    sm: 575px
+);
+// список контейнеров по отношению к breakpoints
+$container-max-width: (
+    xl: 960px,//макс ширина контейнера для соответствующего breakpoint
+    lg: 720px,
+    md: 540px,
+    sm: 100%
+);
+// d-flex
+$displays: none, inline-block, block, flex;
+
+//Custom property
+:root {
+    --green-clr: #19a846;
+    --white-clr: #f2f2f2;
+    --box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.7);
+    --logo-fz: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
+    --biggest-fz: calc(30px + (80 - 30) * ((100vw - 300px) / (1600 - 300)));
+    --large-fz: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+    --medium-fz: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
+    --small-fz: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    --number-icons: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+
+

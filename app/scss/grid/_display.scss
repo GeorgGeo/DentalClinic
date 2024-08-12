@@ -1,0 +1,15 @@
+@each $display in $displays {
+    .d-#{$display} {
+        display: $display;
+    }
+}
+
+@each $name, $value in $grid-breakpoints {
+    @include media-breakpoint($value) {
+        @each $display in $displays {
+            .d-#{$name}-#{$display} {
+                display: $display;
+            }
+        }
+    }
+}

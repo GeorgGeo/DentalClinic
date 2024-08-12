@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #151515;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 9%;
+  z-index: 9;
+}
+header .logo {
+  font-size: var(--logo-fz);
+  color: var(--green-clr)
+}
+header .logo .fa-tooth {
+  color: var(--white-clr);
+  font-size: var(--logo-fz);
+}
+header .navbar {
+  display: flex;
+}
+header .navbar li {
+  margin: 0 1.5rem;
+}
+header .navbar li a {
+  font-size: var(--medium-fz);
+  color: var(--white-clr);
+  padding: 0.7rem;
+  background: linear-gradient(#19a846 0 0) 0 0,
+  linear-gradient(#19a846 0 0) 0 0,
+  linear-gradient(#19a846 0 0) 100% 100%,
+  linear-gradient(#19a846 0 0) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 1.5rem 0.2rem, 0.2rem 1.5rem;
+}
+header .navbar li a:hover {
+  color: var(--green-clr);
+  background-position: 100% 0%, 0% 100%, 0% 100%, 100% 0%;
+  transition: all 0.5s ease-in;
+}
+//Menu btn
+#menu-btn {
+  color: var(--green-clr);
+  font-size: var(--medium-fz);
+  cursor: pointer;
+  border: 0.1rem solid var(--green-clr);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+

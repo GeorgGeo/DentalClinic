@@ -1,0 +1,4 @@
+// воспользуемся mixin _row
+.row {
+    @include make-row();
+}

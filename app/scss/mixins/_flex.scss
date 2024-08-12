@@ -1,0 +1,60 @@
+// @mixin flex ($ali: stretch, $jc: flex-start, $fw: wrap,) {
+//     align-items: $ali;
+//     display: flex;
+//     flex-wrap: $fw;
+//     justify-content: $jc;
+// };
+@mixin flex($ali: center, $jc: flex-start, $fw: wrap) {
+  align-items: $ali;
+  display: flex;
+  flex-wrap: $fw;
+  justify-content: $jc;
+}
+
+@mixin generate-flex-helpers($prefix: '') {
+  // .flex#{$prefix}-row {
+  //   flex-direction: row !important;
+  // }
+  .flex#{$prefix}-row { flex-direction: row !important; }
+  .flex#{$prefix}-column { flex-direction: column !important; }
+  .flex#{$prefix}-row-reverse { flex-direction: row-reverse !important; }
+  .flex#{$prefix}-column-reverse { flex-direction: column-reverse !important; }
+
+  .flex#{$prefix}-wrap { flex-wrap: wrap !important; }
+  .flex#{$prefix}-nowrap { flex-wrap: nowrap !important; }
+  .flex#{$prefix}-wrap-reverse { flex-wrap: wrap-reverse !important; }
+  .flex#{$prefix}-fill { flex: 1 1 auto !important; }
+  .flex#{$prefix}-grow-0 { flex-grow: 0 !important; }
+  .flex#{$prefix}-grow-1 { flex-grow: 1 !important; }
+  .flex#{$prefix}-shrink-0 { flex-shrink: 0 !important; }
+  .flex#{$prefix}-shrink-1 { flex-shrink: 1 !important; }
+
+  .justify-content#{$prefix}-start { justify-content: flex-start !important; }
+  .justify-content#{$prefix}-end { justify-content: flex-end !important; }
+  .justify-content#{$prefix}-center { justify-content: center !important; }
+  .justify-content#{$prefix}-between { justify-content: space-between !important; }
+  .justify-content#{$prefix}-around { justify-content: space-around !important; }
+
+  .align-items#{$prefix}-start { align-items: flex-start !important; }
+  .align-items#{$prefix}-end { align-items: flex-end !important; }
+  .align-items#{$prefix}-center { align-items: center !important; }
+  .align-items#{$prefix}-baseline { align-items: baseline !important; }
+  .align-items#{$prefix}-stretch { align-items: stretch !important; }
+
+  .align-content#{$prefix}-start { align-content: flex-start !important; }
+  .align-content#{$prefix}-end { align-content: flex-end !important; }
+  .align-content#{$prefix}-center { align-content: center !important; }
+  .align-content#{$prefix}-between { align-content: space-between !important; }
+  .align-content#{$prefix}-around { align-content: space-around !important; }
+  .align-content#{$prefix}-stretch { align-content: stretch !important; }
+
+  .align-self#{$prefix}-auto { align-self: auto !important; }
+  .align-self#{$prefix}-start { align-self: flex-start !important; }
+  .align-self#{$prefix}-end { align-self: flex-end !important; }
+  .align-self#{$prefix}-center { align-self: center !important; }
+  .align-self#{$prefix}-baseline { align-self: baseline !important; }
+  .align-self#{$prefix}-stretch { align-self: stretch !important; }
+}
+// Это будет так
+// @include generate-flex-helpers();
+// @include generate-flex-helpers('-sm');
